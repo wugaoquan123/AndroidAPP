@@ -6,12 +6,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button1"
-        android:id="@+id/button" />
+        android:text="启动另一个Activity"
+        android:id="@+id/btnStartAnotherAty" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button2"
-        android:id="@+id/button2" />
 </LinearLayout>

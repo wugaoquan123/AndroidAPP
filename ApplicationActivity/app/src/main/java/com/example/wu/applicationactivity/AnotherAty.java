@@ -1,34 +1,22 @@
 package com.example.wu.applicationactivity;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class AnotherAty extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_main);
-        setContentView(R.layout.my_layout);
-
-        findViewById(R.id.btnStartAnotherAty).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,AnotherAty.class));
-//                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("www.baidu.com")));
-            }
-        });
+        setContentView(R.layout.activity_another_aty);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_another_aty, menu);
         return true;
     }
 
