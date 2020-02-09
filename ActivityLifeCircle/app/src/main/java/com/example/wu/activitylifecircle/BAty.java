@@ -1,76 +1,66 @@
 package com.example.wu.activitylifecircle;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class BAty extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_baty);
 
-        System.out.println("A onCreate");
-
-        findViewById(R.id.btnStartBAty).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,BAty.class));
-
-            }
-        });
+        System.out.println("B onCreate");
     }
 
     @Override
     protected void onStart() {
         super.onStart();
 
-        System.out.println("A onStart");
+        System.out.println("B onStart");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
 
-        System.out.println("A onResume");
+        System.out.println("B onResume");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
 
-        System.out.println("A onPause");
+        System.out.println("B onPause");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
 
-        System.out.println("A onStop");
+        System.out.println("B onStop");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
 
-        System.out.println("A onDestroy");
+        System.out.println("B onDestroy");
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
 
-        System.out.println("A onRestart");
+        System.out.println("B onRestart");
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_baty, menu);
         return true;
     }
 
